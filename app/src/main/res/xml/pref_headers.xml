@@ -1,0 +1,20 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.john_yim.babyapplication.SettingsActivity$TemperatureSettingFragment"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/pref_header_temeperature" />
+
+    <header
+        android:fragment="com.john_yim.babyapplication.SettingsActivity$RateSettingFragment"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/pref_header_rate" />
+
+    <header
+        android:fragment="com.john_yim.babyapplication.SettingsActivity$UvSettingFragment"
+        android:icon="@drawable/ic_sync_black_24dp"
+        android:title="@string/pref_header_uv" />
+
+</preference-headers>

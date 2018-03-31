@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.john_yim.babyapplication.view.HeartFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000px"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="800px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/heart_rate_circle"/>
+
+        <RelativeLayout
+            android:layout_width="600px"
+            android:layout_height="300px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/heartRateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="066"
+                android:textSize="250px"
+                android:textColor="@color/black"
+                android:layout_alignParentLeft="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/heartRateValue">
+
+               <ImageView
+                   android:layout_width="100px"
+                   android:layout_height="100px"
+                   android:layout_centerHorizontal="true"
+                   android:layout_alignParentRight="true"
+                   android:src="@drawable/heart_rate"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BPM"
+                    android:textSize="60px"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/mode_change"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/backgroundWhite"
+                android:text="change"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:background="@color/auntRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20">
+
+        <com.john_yim.babyapplication.view.HeartRateCurveView
+            android:id="@+id/heartRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

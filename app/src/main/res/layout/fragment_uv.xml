@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/uv_background"
+    tools:context="com.john_yim.babyapplication.view.UvFragment">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textColor="@color/backgroundWhite"
+            android:text="紫外线强度"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.john_yim.babyapplication.view.UvCurveView
+            android:id="@+id/uvCurve"
+            android:layout_width="match_parent"
+            android:layout_height="700px" />
+
+        <TextView
+            android:id="@+id/uvValue"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7.2"
+            android:textColor="@color/backgroundWhite"
+            android:textSize="75dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/uvCurve"
+            android:layout_height="wrap_content"
+            android:textColor="@color/backgroundWhite"
+            android:text="紫外线等级"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uvCurve"
+            android:id="@+id/uvStatus"
+            android:textColor="@color/backgroundWhite"
+            android:textSize="25dp"
+            android:text="正常"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

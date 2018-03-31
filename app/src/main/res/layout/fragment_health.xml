@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.john_yim.babyapplication.MainActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/backgroundWhite">
+
+        <ImageView
+            android:layout_width="400.0px"
+            android:layout_height="400.0px"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/circle_bg"/>
+
+        <TextView
+            android:id="@+id/health_fraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="100px"
+            android:textColor="@color/backgroundWhite"
+            android:text="@string/default_health"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:background="@color/backgroundWhite"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="25px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:text="健康明细"
+                android:textSize="80px"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/gotoDetail"
+                android:layout_centerVertical="true"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20px" />
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50px"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/goto_rateFragement"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px">
+
+            <ImageView
+                android:id="@+id/heartRateIcon"
+                android:layout_centerVertical="true"
+                android:layout_width="65px"
+                android:layout_height="65px"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/heart_rate"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/heartRateIcon"
+                android:textColor="@color/black"
+                android:textSize="65px"
+                android:text="心率"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/rate_status"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/default_situation"
+                android:textSize="50px"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/goto_temperatureFragement"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="65px"
+                android:layout_height="65px"
+                android:src="@drawable/temperature"
+                android:id="@+id/temperatureIcon"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/temperatureIcon"
+                android:text="温度"
+                android:textColor="@color/black"
+                android:textSize="65px"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/temperature_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="50px"
+                android:text="正常"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:background="@color/backgroundWhite"
+            android:id="@+id/goto_uvFragement"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="65px"
+                android:layout_height="65px"
+                android:src="@drawable/uv"
+                android:id="@+id/uvIcon"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textSize="65px"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="紫外线"
+                android:layout_toRightOf="@id/uvIcon"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/uv_status"
+                android:layout_centerVertical="true"
+                android:textSize="50px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="正常"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+    </LinearLayout>
+
+</LinearLayout>

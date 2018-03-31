@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.john_yim.babyapplication.view.TemperatureFragment">
+
+    <RelativeLayout
+        android:id="@+id/alertBackground"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_weight="1"
+        android:background="@drawable/temperature_background_normal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/temperature_value_background" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="220px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/temperatureValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textSize="150px"
+                android:textColor="#40E0D0"/>
+
+            <TextView
+                android:layout_toRightOf="@id/temperatureValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="℃"
+                android:textSize="150px"
+                android:textColor="#40E0D0"/>
+
+            <TextView
+                android:id="@+id/temperatureStatus"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正常"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/alertTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/backgroundWhite"
+                android:textSize="75px"
+                android:text="37.5"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/alertTemperature"
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:src="@drawable/alert_temperature"
+                android:id="@+id/imageView" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.john_yim.babyapplication.view.TemperatureCurveView
+            android:layout_marginTop="150px"
+            android:id="@+id/temperatureCurve"
+            android:layout_width="match_parent"
+            android:layout_height="550px" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实时温度曲线"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="75px"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="50px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="10px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/value38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="38.0℃"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/line"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/value38"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="10px">
+
+                <TextView
+                    android:id="@+id/value37.5"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="37.5℃"/>
+
+                <View
+                    android:background="@color/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/value37.5"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="10px">
+
+                <TextView
+                    android:id="@+id/value37"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="37.0℃"/>
+
+                <View
+                    android:background="@color/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/value37"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="10px">
+
+                <TextView
+                    android:id="@+id/value36.5"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="36.5℃"/>
+
+                <View
+                    android:background="@color/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/value36.5"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="10px">
+
+                <TextView
+                    android:id="@+id/value36"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="36.0℃"/>
+
+                <View
+                    android:background="@color/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/value36"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

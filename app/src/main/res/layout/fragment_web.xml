@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.john_yim.babyapplication.view.WebFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/video_url"
+            android:layout_width="950px"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/goto_video"
+            android:layout_width="50px"
+            android:layout_marginLeft="20px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rotate_right"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/video_web"
+        android:layout_width="match_parent"
+        android:layout_height="1250px">
+
+
+    </WebView>
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+
+        <ImageView
+            android:id="@+id/rotate_left"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/rotate_left"
+            android:textSize="50px"/>
+
+        <Button
+            android:id="@+id/stop_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="停止"/>
+
+        <ImageView
+            android:id="@+id/rotate_right"
+            android:layout_centerVertical="true"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/rotate_right"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

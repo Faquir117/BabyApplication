@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Baby Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_heart_fragment">Hello heart fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_temperature_fragment">Hello temperature fragment</string>
+
+    <string name="hello_uv_fragement">Hello uv fragment</string>
+
+    <string name="default_health">100</string>
+
+    <string name="default_situation">正常</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_temeperature">Temperature Setting</string>
+
+    <string name="pref_title_temperature">Temperature Warning</string>
+    <string name="pref_description_temerature_setting">
+        set normal temperature
+    </string>
+
+    <string name="pref_title_min_temperature">Min Temperature</string>
+    <string name="pref_default_min_temperature">36.0</string>
+
+    <string name="pref_title_max_temperature">Max Temperature</string>
+    <string name="pref_default_max_temperature">38.0</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_uv">UV Setting</string>
+
+    <string name="pref_title_uv">UV Warning</string>
+
+    <string name="pref_description_uv_setting">Set UV Warning Point</string>
+
+    <string name="pref_title_uv_point">UV Warning Point</string>
+    <string name="pref_default_uv_point">5.0</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_rate">Rate Setting</string>
+
+    <string name="pref_title_rate">Rate Warning</string>
+
+    <string name="pref_descrption_rate_setting">set normal rate</string>
+
+    <string name="pref_title_min_rate">Min Rate</string>
+    <string name="pref_title_max_rate">Max Rate</string>
+
+    <string name="pref_default_min_rate">120</string>
+    <string name="pref_default_max_rate">140</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="switch_on">开</string>
+    <string name="switch_off">关</string>
+</resources>
